@@ -15,12 +15,12 @@ $("#toggle").click(function () {
 // ==================================
 
 $("#fadeOut").click(function () {
-  $(".box").fadeOut(400)
-})
+  $(".box").fadeOut(400);
+});
 
 $("#fadeIn").click(function () {
-  $(".box").fadeIn(400)
-})
+  $(".box").fadeIn(400);
+});
 
 $("#fadeToggle").click(function () {
   $(".box").fadeToggle(400);
@@ -40,3 +40,16 @@ $("#slideToggle").click(function () {
   $(".box").slideToggle(400);
 });
 
+// ===================================
+
+$("#addClass").click(function () {
+  $(".box").addClass("dox");
+});
+
+$("#removeClass").click(function () {
+  $(".box").removeClass("dox");
+});
+
+$("#toggleClass").click(function () {
+  $(".box").toggleClass("dox");
+});
