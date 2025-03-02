@@ -16,15 +16,16 @@
     <!-- stylesheet link start -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/venobox.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- stylesheet link end -->
   </head>
   <body>
     <!-- lightbox section start -->
     <section id="lightboxSection">
-      <h1 class="lightboxText">lightbox</h1>
+      <h2 class="boxText">lightbox</h2>
       <div class="container">
-        <div class="row py-5">
+        <div class="row py-4">
           <div class="col-lg-4">
             <div class="card" style="width: 400px">
               <a href="images/image-1.jpg" data-lightbox="image-single">
@@ -72,10 +73,61 @@
     </section>
     <!-- lightbox section end -->
 
+    <!-- venobox section start -->
+    <section id="venoboxSection">
+      <h2 class="boxText">venobox</h2>
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-lg-4">
+            <div class="card" style="width: 400px">
+              <a
+                class="my-image-links"
+                data-gall="gallery01"
+                href="images/image-1.jpg"
+                ><img src="images/image-1.jpg" class="img-fluid card-img-top"
+              /></a>
+              <div class="card-body">
+                <p class="card-text">This picture is friend with second</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 400px">
+              <a
+                class="my-image-links"
+                data-gall="gallery02"
+                href="images/image-2.jpg"
+                ><img src="images/image-2.jpg" class="img-fluid card-img-top"
+              /></a>
+              <div class="card-body">
+                <p class="card-text">This picture is friend with third</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 400px">
+              <a
+                class="my-image-links"
+                data-gall="gallery02"
+                href="images/image-3.jpg"
+                ><img src="images/image-3.jpg" class="img-fluid card-img-top"
+              /></a>
+              <div class="card-body">
+                <p class="card-text">This picture is friend with second</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- venobox section end -->
+
     <!-- script link start -->
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/venobox.js"></script>
+    <script src="js/script.js"></script>
     <!-- script link end -->
   </body>
 </html>
