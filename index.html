@@ -3,35 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jquery</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Sigmar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- button test start -->
-    <div class="container">
-      <button id="hide">hide</button>
-      <button id="show">show</button>
-      <button id="toggle">toggle</button>
-      <button id="fadeOut">fade out</button>
-      <button id="fadeIn">fade in</button>
-      <button id="fadeToggle">toggle fade</button>
-      <button id="slideUp">slide up</button>
-      <button id="slideDown">slide down</button>
-      <button id="slideToggle">slide toggle</button>
-      <button id="addClass">add class</button>
-      <button id="removeClass">remove class</button>
-      <button id="toggleClass">toggle class</button>
-      <a href="html/counterup.html"><button>counter up</button></a>
-      <a href="html/countdown.html"><button>countdown</button></a>
-      <div class="box"></div>
-    </div>
-    <!-- button test end -->
-
-    <!-- javascript start -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-    <!-- javascript end -->
+    <section id="lightboxSection">
+      <h1 class="lightboxText">lightbox</h1>
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-4">
+            <div class="card" style="width: 400px">
+              <a href="images/image-1.jpg" data-lightbox="image-single">
+                <img
+                  src="images/image-1.jpg"
+                  class="card-img-top"
+                  alt="image-1.jpg"
+                />
+              </a>
+              <div class="card-body">
+                <p class="card-text">This picture do not have friends</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 400px">
+              <a href="images/image-2.jpg" data-lightbox="image-duo">
+                <img
+                  src="images/image-2.jpg"
+                  class="card-img-top"
+                  alt="image-2.jpg"
+                />
+              </a>
+              <div class="card-body">
+                <p class="card-text">This picture is friend with third</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 400px">
+              <a href="images/image-3.jpg" data-lightbox="image-duo">
+                <img
+                  src="images/image-3.jpg"
+                  class="card-img-top"
+                  alt="image-3.jpg"
+                />
+              </a>
+              <div class="card-body">
+                <p class="card-text">This picture is friend with second</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/lightbox.js"></script>
   </body>
 </html>
