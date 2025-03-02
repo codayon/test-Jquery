@@ -1,15 +1,19 @@
+/* common css start */
 * {
   padding: 0;
   margin: 0;
 }
+/* common css end */
+
+/* lightbox section start */
 #lightboxSection {
-  background: #3F4F44;
+  background: #3f4f44;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 .lightboxText {
   text-align: center;
-  color: #EAFAEA;
+  color: #eafaea;
   font-family: "Sigmar", sans-serif;
 }
 .card-text {
@@ -18,3 +22,4 @@
   font-weight: 600;
   text-align: center;
 }
+/* lightbox section end */
