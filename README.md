@@ -24,7 +24,7 @@
 font-family: "Sigmar", sans-serif;
 ```
 
-- Inter
+- Roboto Mono
 ```
-font-family: "Inter", sans-serif;
+font-family: "Roboto Mono", monospace;
 ```
