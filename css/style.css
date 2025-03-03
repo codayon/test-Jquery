@@ -3,32 +3,46 @@
   padding: 0;
   margin: 0;
 }
+
 /* common css end */
 
 /* lightbox section start */
 #lightboxSection {
   background: #3f4f44;
-  padding-top: 50px;
-  /* padding-bottom: 100px; */
+  padding-top: 70px;
 }
+
 .boxText {
   font-size: 48px;
   text-align: center;
   color: #eafaea;
   font-family: "Sigmar", sans-serif;
 }
+
 .card-text {
   font-size: 22px;
   font-family: "Grape Nuts", cursive;
   font-weight: 600;
   text-align: center;
 }
+
 /* lightbox section end */
 
 /* venobox section start */
 #venoboxSection {
   background: #3f4f44;
   padding-top: 50px;
-  padding-bottom: 80px;
 }
+
 /* venobox section end */
+
+/* mixitup section start */
+#mixitupSection {
+  background: #3f4f44;
+  padding-top: 50px;
+  /* padding-bottom: 80px; */
+  height: 1320px;
+  width: 100%;
+}
+
+/* mixitup section end */
