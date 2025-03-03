@@ -54,7 +54,7 @@
 /* typed section start */
 #typedSection {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   background: #3f4f44;
 }
 
@@ -114,6 +114,7 @@
 }
 
 .typedConfig {
+  padding-top: 60px;
   font-size: 48px;
   color: #eafaea;
   font-family: "Roboto Mono", monospace;
