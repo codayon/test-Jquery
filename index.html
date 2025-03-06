@@ -1,281 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jQuery</title>
+        <!-- google fonts link start -->
+        <!-- google fonts link end -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>jQuery</title>
-  <!-- google fonts link start -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&display=swap"
-    rel="stylesheet">
-  <!-- google fonts link end -->
+        <!-- stylesheet link start -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/slick.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- stylesheet link end -->
+    </head>
+    <body>
+        <!-- slick section start -->
+        <section id="slickSection">
+            <div class="text-capitalize text-center py-5">
+                <h1>Single Item</h1>
+            </div>
+            <div class="row">
+                <div class="singleItem col-sm-7 m-auto">
+                    <div class="images">
+                        <img src="images/image-1.jpg" class="img-fluid w-100" />
+                    </div>
+                    <div class="images">
+                        <img src="images/image-2.jpg" class="img-fluid w-100" />
+                    </div>
+                    <div class="images">
+                        <img src="images/image-3.jpg" class="img-fluid w-100" />
+                    </div>
+                    <div class="images">
+                        <img src="images/image-4.jpg" class="img-fluid w-100" />
+                    </div>
+                    <div class="images">
+                        <img src="images/image-5.jpg" class="img-fluid w-100" />
+                    </div>
+                    <div class="images">
+                        <img src="images/image-6.jpg" class="img-fluid w-100" />
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py-5">
+                <h1>Autoplay</h1>
+            </div>
+            <div class="row">
+                <div class="autoplayImage col-sm-7 m-auto d-flex">
+                    <div class="images">
+                        <img src="images/image-1.jpg" class="img-fluid w-100" />
+                    </div>
+                    <div class="images">
+                        <img src="images/image-2.jpg" class="img-fluid w-100" />
+                    </div>
+                    <div class="images">
+                        <img src="images/image-3.jpg" class="img-fluid w-100" />
+                    </div>
+                    <div class="images">
+                        <img src="images/image-4.jpg" class="img-fluid w-100" />
+                    </div>
+                    <div class="images">
+                        <img src="images/image-5.jpg" class="img-fluid w-100" />
+                    </div>
+                    <div class="images">
+                        <img src="images/image-6.jpg" class="img-fluid w-100" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slick section end -->
 
-  <!-- stylesheet link start -->
-  <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <!-- <link rel="stylesheet" href="css/lightbox.css" /> -->
-  <link rel="stylesheet" href="css/lightbox.min.css" />
-  <!-- <link rel="stylesheet" href="css/venobox.css" /> -->
-  <link rel="stylesheet" href="css/venobox.min.css" />
-  <!-- <link rel="stylesheet" href="css/reset.css" /> -->
-  <link rel="stylesheet" href="css/reset.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- stylesheet link end -->
-</head>
-
-<body>
-  <!-- lightbox section start -->
-  <section id="lightboxSection">
-    <h2 class="boxText">lightbox</h2>
-    <div class="container">
-      <div class="row py-4">
-        <div class="col-lg-4">
-          <div class="card" style="width: 400px">
-            <a href="images/image-1.jpg" data-lightbox="image-single">
-              <img src="images/image-1.jpg" class="card-img-top" alt="image-1.jpg" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture do not have friends</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 400px">
-            <a href="images/image-2.jpg" data-lightbox="image-duo">
-              <img src="images/image-2.jpg" class="card-img-top" alt="image-2.jpg" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture is friend with third</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 400px">
-            <a href="images/image-3.jpg" data-lightbox="image-duo">
-              <img src="images/image-3.jpg" class="card-img-top" alt="image-3.jpg" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture is friend with second</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- lightbox section end -->
-
-  <!-- venobox section start -->
-  <section id="venoboxSection">
-    <h2 class="boxText">venobox</h2>
-    <div class="container">
-      <div class="row py-4">
-        <div class="col-lg-4">
-          <div class="card" style="width: 400px">
-            <a class="my-image-links" data-gall="gallery01" href="images/image-1.jpg">
-              <img src="images/image-4.jpg" class="img-fluid card-img-top" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture do not have friends</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 400px">
-            <a class="my-image-links" data-gall="gallery02" href="images/image-2.jpg">
-              <img src="images/image-5.jpg" class="img-fluid card-img-top" /></a>
-            <div class="card-body">
-              <p class="card-text">This picture is friend with third</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 400px">
-            <a class="my-image-links" data-gall="gallery02" href="images/image-3.jpg">
-              <img src="images/image-6.jpg" class="img-fluid card-img-top" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture is friend with second</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row py-4">
-        <div class="col-lg-4">
-          <div class="card" style="width: 400px">
-            <a class="my-video-links" data-autoplay="true" data-vbtype="video" data-gall="gallery03"
-              href="https://vimeo.com/1061963830?share=copy">
-              <img src="images/thumbnail-1.png" class="img-fluid card-img-top" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This video do not have friends</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 400px">
-            <a class="my-video-links" data-autoplay="true" data-vbtype="video" data-gall="gallery04"
-              href="https://youtu.be/IGDDkMrizuM">
-              <img src="images/thumbnail-2.png" class="img-fluid card-img-top" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This video is friend with third</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 400px">
-            <a class="my-video-links" data-autoplay="true" data-vbtype="video" data-gall="gallery04"
-              href="videos/video.mp4">
-              <img src="images/thumbnail-3.png" class="img-fluid card-img-top" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture is friend with second</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- venobox section end -->
-
-  <!-- mixitup section start -->
-  <section id="mixitupSection">
-    <div class="container">
-      <h2 class="boxText">mixitup</h2>
-      <div class="row pt-4 justify-content-center controls">
-        <button type="button" class="btn btn-secondary col-lg-1 m-3 control" data-filter="all"><span
-            class="btnConfig">All</span></button>
-        <button type="button" class="btn btn-secondary col-lg-1 m-3 control" data-filter=".lightboxBtn"><span
-            class="btnConfig">Lighbox</span></button>
-        <button type="button" class="btn btn-secondary col-lg-1 m-3 control" data-filter=".venoboxBtn"><span
-            class="btnConfig">Venobox</span></button>
-        <button type="button" class="btn btn-secondary col-lg-1 m-3 control" data-filter=".videosBtn"><span
-            class="btnConfig">Videos</span></button>
-      </div>
-      <div class="row py-4 mixitupSrc">
-        <div class="col-lg-4 py-4 mix lightboxBtn">
-          <div class="card" style="width: 400px">
-            <a href="images/image-1.jpg" data-lightbox="image-10">
-              <img src="images/image-1.jpg" class="card-img-top" alt="image-1.jpg" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture do not have friends</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-4 mix lightboxBtn">
-          <div class="card" style="width: 400px">
-            <a href="images/image-2.jpg" data-lightbox="image-20">
-              <img src="images/image-2.jpg" class="card-img-top" alt="image-2.jpg" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture is friend with third</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-4 mix lightboxBtn">
-          <div class="card" style="width: 400px">
-            <a href="images/image-3.jpg" data-lightbox="image-20">
-              <img src="images/image-3.jpg" class="card-img-top" alt="image-3.jpg" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture is friend with second</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-4 mix venoboxBtn">
-          <div class="card" style="width: 400px">
-            <a class="my-image-links" data-gall="gallery-10" href="images/image-1.jpg">
-              <img src="images/image-4.jpg" class="img-fluid card-img-top" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture do not have friends</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-4 mix venoboxBtn">
-          <div class="card" style="width: 400px">
-            <a class="my-image-links" data-gall="gallery-20" href="images/image-2.jpg">
-              <img src="images/image-5.jpg" class="img-fluid card-img-top" /></a>
-            <div class="card-body">
-              <p class="card-text">This picture is friend with third</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-4 mix venoboxBtn">
-          <div class="card" style="width: 400px">
-            <a class="my-image-links" data-gall="gallery-20" href="images/image-3.jpg">
-              <img src="images/image-6.jpg" class="img-fluid card-img-top" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture is friend with second</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-4 mix videosBtn">
-          <div class="card" style="width: 400px">
-            <a class="my-video-links" data-autoplay="true" data-vbtype="video" data-gall="gallery-30"
-              href="https://vimeo.com/1061963830?share=copy">
-              <img src="images/thumbnail-1.png" class="img-fluid card-img-top" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This video do not have friends</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-4 mix videosBtn">
-          <div class="card" style="width: 400px">
-            <a class="my-video-links" data-autoplay="true" data-vbtype="video" data-gall="gallery-40"
-              href="https://youtu.be/IGDDkMrizuM">
-              <img src="images/thumbnail-2.png" class="img-fluid card-img-top" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This video is friend with third</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-4 mix videosBtn">
-          <div class="card" style="width: 400px">
-            <a class="my-video-links" data-autoplay="true" data-vbtype="video" data-gall="gallery-40"
-              href="videos/video.mp4">
-              <img src="images/thumbnail-3.png" class="img-fluid card-img-top" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">This picture is friend with second</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- mixitup section end -->
-
-  <!-- typedjs section start -->
-  <section id="typedSection">
-    <hr>
-    <div class="container">
-      <h2 class="offset-lg-4 typedConfig text-left">We Are <span class="typed"></span></h2>
-    </div>
-  </section>
-  <!-- typedjs section end -->
-
-  <!-- script link start -->
-  <!-- <script src="js/bootstrap.bundle.js"></script> -->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="js/jquery-3.7.1.js"></script> -->
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <!-- <script src="js/lightbox.js"></script> -->
-  <script src="js/lightbox.min.js"></script>
-  <!-- <script src="js/venobox.js"></script> -->
-  <script src="js/venobox.min.js"></script>
-  <!-- <script src="js/mixitup.js"></script> -->
-  <script src="js/mixitup.min.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/script.js"></script>
-  <!-- script link end -->
-</body>
-
+        <!-- script link start -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/script.js"></script>
+        <!-- script link end -->
+    </body>
 </html>

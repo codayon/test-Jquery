@@ -1,123 +1,30 @@
 /* common css start */
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #fbfbfb;
 }
 
 /* common css end */
 
-/* lightbox section start */
-#lightboxSection {
-  background: #3f4f44;
-  padding-top: 70px;
+/* slick section start */
+.prev {
+    position: absolute;
+    font-size: 4rem;
+    z-index: 100;
+    left: -110px;
+    top: 50%;
+    /* cursor: pointer; */
+    transform: translateY(-50%);
+}
+.next {
+    position: absolute;
+    font-size: 4rem;
+    z-index: 100;
+    right: -110px;
+    top: 50%;
+    /* cursor: pointer; */
+    transform: translateY(-50%);
 }
 
-.boxText {
-  font-size: 48px;
-  text-align: center;
-  color: #eafaea;
-  font-family: "Sigmar", sans-serif;
-}
-
-.card-text {
-  font-size: 22px;
-  font-family: "Grape Nuts", cursive;
-  font-weight: 600;
-  text-align: center;
-}
-
-/* lightbox section end */
-
-/* venobox section start */
-#venoboxSection {
-  background: #3f4f44;
-  padding-top: 50px;
-}
-
-/* venobox section end */
-
-/* mixitup section start */
-#mixitupSection {
-  background: #3f4f44;
-  padding-top: 50px;
-  height: 1320px;
-  width: 100%;
-}
-
-.btnConfig {
-  color: #eafaea;
-  font-family: "Roboto Mono", monospace;
-}
-
-/* mixitup section end */
-
-/* typed section start */
-#typedSection {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background: #3f4f44;
-}
-
-.typed::after {
-  content: '|';
-  display: inline;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
-.typed-cursor {
-  opacity: 0;
-  display: none;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.typedConfig {
-  padding-top: 60px;
-  font-size: 48px;
-  color: #eafaea;
-  font-family: "Roboto Mono", monospace;
-}
-
-/* typed section end */
+/* slick section end */
