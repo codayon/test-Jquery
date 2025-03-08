@@ -1,12 +1,12 @@
 // Single Item
 $(".singleItem").slick({
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
   prevArrow: '<i class="fa-solid fa-circle-chevron-left prev"></i>',
   nextArrow: '<i class="fa-solid fa-circle-chevron-right next"></i>',
 });
 
-// Autoplay
+// Autoplay;
 $(".autoplayImage").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
