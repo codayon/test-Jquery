@@ -26,5 +26,23 @@
   cursor: pointer;
   transform: translateY(-50%);
 }
+.slick-dots {
+  padding-left: 0;
+  padding-bottom: 30px;
+  list-style: none;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slick-dots li button {
+  font-size: 0;
+  padding: 20px;
+  background: red;
+  border-radius: 50%;
+}
+.slick-dots li {
+  display: inline-block;
+}
 
 /* slick section end */
